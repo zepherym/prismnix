@@ -189,4 +189,12 @@
             };
         }
     );
+
+    mkRawConfigDescription = descriptons: (
+      lib.mkOption {
+          type = lib.types.attrs;
+          default = {};
+          description = "Descriptions for individual settings in the raw mod configuration";
+      }
+    );
 }
